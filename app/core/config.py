@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 class Settings(BaseSettings):
     APP_NAME : str = 'UNI RAG'
     GROQ_API_KEY : str
-    CHROMA_PATH : Path = BASE_DIR / 'data' / 'chroma', 
+    CHROMA_PATH : Path = BASE_DIR / 'data' / 'chroma'
     EMBEDDING_MODEL : str
 
     model_config = SettingsConfigDict(
